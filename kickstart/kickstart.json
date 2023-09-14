@@ -74,7 +74,7 @@
               "application": {
                 "name": "Example app",
                 "oauthConfiguration" : {
-                    "authorizedRedirectURLs": ["http://localhost:3000/auth/callback", "http://localhost:3000/wp-admin/admin-ajax.php?action=openid-connect-authorize"],
+                    "authorizedRedirectURLs": ["http://localhost:3000/auth/callback", "http://localhost:3000/wp-admin/admin-ajax.php?action=openid-connect-authorize", "http://localhost:3000/wp-login.php?loggedout=true&wp_lang=en_US"],
                     "authorizedOriginURLs": ["http://localhost:3000"],
                     "clientSecret": "super-secret-secret-that-should-be-regenerated-for-production",
                     "logoutURL": "http://localhost:3000/logout",
