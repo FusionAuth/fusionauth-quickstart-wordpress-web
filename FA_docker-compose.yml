@@ -1,23 +1,6 @@
 version: '3'
 
-networks:
-  db_net:
-    driver: bridge
-  search_net:
-    driver: bridge
-  wp:
-    driver: bridge
-
-volumes:
-  db_data:
-  fusionauth_config:
-  search_data:
-  wordpress:
-  wpdb:
-
 services:
-
-## FUSIONAUTH ####################
   db:
     image: postgres:12.9
     environment:
@@ -76,10 +59,10 @@ services:
       SEARCH_SERVERS: http://search:9200
       SEARCH_TYPE: elasticsearch
       FUSIONAUTH_APP_KICKSTART_FILE: ${FUSIONAUTH_APP_KICKSTART_FILE}
+
     networks:
       - db_net
       - search_net
-      - wp
     restart: unless-stopped
     ports:
       - 9011:9011
@@ -87,34 +70,13 @@ services:
       - fusionauth_config:/usr/local/fusionauth/config
       - ./kickstart:/usr/local/fusionauth/kickstart
 
-## WORDPRESS ####################
-  wpdb:
-    image: mysql:5.7
-    restart: always
-    networks:
-      - wp
-    environment:
-      MYSQL_DATABASE: mysite
-      MYSQL_USER: u
-      MYSQL_PASSWORD: u
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
-    volumes:
-      - wpdb:/var/lib/mysql
+networks:
+  db_net:
+    driver: bridge
+  search_net:
+    driver: bridge
 
-  wordpress:
-    image: wordpress
-    depends_on:
-      - wpdb
-      - fusionauth
-    restart: always
-    networks:
-      - wp
-    ports:
-      - 3000:80
-    environment:
-      WORDPRESS_DB_HOST: wpdb
-      WORDPRESS_DB_USER: u
-      WORDPRESS_DB_PASSWORD: u
-      WORDPRESS_DB_NAME: mysite
-    volumes:
-      - wordpress:/var/www/html
+volumes:
+  db_data:
+  fusionauth_config:
+  search_data:
