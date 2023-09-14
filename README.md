@@ -58,5 +58,6 @@ End Session Endpoint URL - http://localhost:9011/oauth2/logout
 - Check “Link Existing Users” if users in your local WordPress database have the same emails as users in your FusionAuth database; otherwise you’ll see an error when those users try to log in.
 - save
 
+login redirect urls in fa:
 # http://localhost:3000/wp-admin/admin-ajax.php?action=openid-connect-authorize
 # http://localhost:3000/wp-login.php?loggedout=true&wp_lang=en_US
