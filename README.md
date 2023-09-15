@@ -84,3 +84,17 @@ users get send to dashboard after login, rather send them to account.
 - administrators only - leave at that
 - redirect url - http://localhost:3000/account
 - disable - Allow all users to edit their profiles in the dashboard.
+
+settings - permalinks
+- permalink structure - postname
+
+pages
+- sample page
+- quick edit
+- title Account
+- slug account
+- make new page Home
+- make new page Change (restrict to logged in at bottom right)
+
+settings - readings settings
+- your homepage displays - a static page - home
