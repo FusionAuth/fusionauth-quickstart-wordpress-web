@@ -93,6 +93,8 @@ services:
     restart: always
     networks:
       - wp
+    ports:
+      - 3306:3306
     environment:
       MYSQL_DATABASE: mysite
       MYSQL_USER: u

@@ -112,5 +112,18 @@ end   1504 -->  after </p>
 :wq
 ```
 
-docker cp fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php ./mysite/wp-login.php
+# docker cp fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php ./mysite/wp-login.php
 docker cp ./mysite/wp-login.php fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php
+
+sudo apt install mysql-client-core-8.0
+
+mysql -h 0.0.0.0 -pu -u u -P 3306
+use mysite
+show tables;
+SHOW COLUMNS FROM wp_posts;
+select post_content from wp_posts where post_type = 'page' and post_title = 'Change';
+select post_content from wp_posts where post_type = 'page' and post_title = 'Home';
+select post_content from wp_posts where post_type = 'page' and post_title = 'Account';
+
+update wp_posts set post_content  = ... where post_title = 'Change';
+no, you have to backup and restore a script for all columns for each page
