@@ -30,6 +30,14 @@ docker compose up; # https://hub.docker.com/_/wordpress
 # change to this - https://github.com/FusionAuth/fusionauth-example-wordpress-sso/blob/main/docker-compose.yml
 ```
 
+```mermaid
+flowchart TD
+    wordpress --> wpdb
+    wordpress --> fusionauth
+    fusionauth --> search
+    fusionauth --> db
+```
+
 Browse to the app at http://localhost:3000.
 
 - http://localhost:3000/wp-admin/install.php
@@ -56,8 +64,23 @@ End Session Endpoint URL - http://localhost:9011/oauth2/logout
 - Change the “Identity Key” and “Nickname Key” values to sub. This is what WordPress will use as Ids internally.
 - Change the “Display Name Formatting” to {email}. This is what will be displayed to the user in the WordPress admin screen.
 - Check “Link Existing Users” if users in your local WordPress database have the same emails as users in your FusionAuth database; otherwise you’ll see an error when those users try to log in.
+- Redirect Back to Origin Page // nah, doesn't help
 - save
 
 login redirect urls in fa:
 # http://localhost:3000/wp-admin/admin-ajax.php?action=openid-connect-authorize
 # http://localhost:3000/wp-login.php?loggedout=true&wp_lang=en_US
+
+now login is possible, restrict page access with simple page access restriction by Plugins & Snippets
+- settings
+- url
+- http://localhost:3000/wp-login.php
+- supported types posts and pages
+- edit sample page - bottom right - enable - For Logged-In Users Only
+
+users get send to dashboard after login, rather send them to account.
+- install Remove Dashboard Access by TrustedLogin
+- settings - dashboard access
+- administrators only - leave at that
+- redirect url - http://localhost:3000/account
+- disable - Allow all users to edit their profiles in the dashboard.
