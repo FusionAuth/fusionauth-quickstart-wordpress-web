@@ -98,3 +98,19 @@ pages
 
 settings - readings settings
 - your homepage displays - a static page - home
+
+Remove wp login so only fa login page is usable
+```bash
+docker exec -it fusionauth-quickstart-wordpress-web-wordpress-1 bash
+apt-get update && apt-get install -y vim
+vim
+:set number
+
+start 1424 <!-- before <form name="loginform"
+end   1504 -->  after </p>
+
+:wq
+```
+
+docker cp fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php ./mysite/wp-login.php
+docker cp ./mysite/wp-login.php fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php
