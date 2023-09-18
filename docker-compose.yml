@@ -104,7 +104,7 @@ services:
       - wpdb:/var/lib/mysql
 
   wordpress:
-    image: wordpress
+    image: wordpress:6.3.1
     depends_on:
       - wpdb
       - fusionauth
