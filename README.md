@@ -22,22 +22,6 @@ In a terminal run the following to start FusionAuth.
 docker-compose up
 ```
 
-In another terminal start the app.
-
-```shell
-cd complete-application
-docker compose up; # https://hub.docker.com/_/wordpress
-# change to this - https://github.com/FusionAuth/fusionauth-example-wordpress-sso/blob/main/docker-compose.yml
-```
-
-```mermaid
-flowchart TD
-    wordpress --> wpdb
-    wordpress --> fusionauth
-    fusionauth --> search
-    fusionauth --> db
-```
-
 Browse to the app at http://localhost:3000.
 
 - http://localhost:3000/wp-admin/install.php
