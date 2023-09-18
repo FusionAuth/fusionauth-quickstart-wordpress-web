@@ -68,13 +68,13 @@ body {
 
 .menu-link {
   font-weight: 600;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin-left: 40px;
 }
 
 .menu-link {
   font-weight: 600;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin-left: 40px;
 }
 
@@ -86,7 +86,7 @@ body {
   width: 150px;
   height: 30px;
   background-color: #096324;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-size: 16px;
   font-weight: 700;
   border-radius: 10px;

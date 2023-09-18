@@ -112,6 +112,7 @@ end   1504 -->  after </p>
 :wq
 ```
 
+<!--
 # docker cp fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php ./mysite/wp-login.php
 docker cp ./mysite/wp-login.php fusionauth-quickstart-wordpress-web-wordpress-1:/var/www/html/wp-login.php
 
@@ -126,4 +127,36 @@ select post_content from wp_posts where post_type = 'page' and post_title = 'Hom
 select post_content from wp_posts where post_type = 'page' and post_title = 'Account';
 
 update wp_posts set post_content  = ... where post_title = 'Change';
-no, you have to backup and restore a script for all columns for each page
+no, you have to backup and restore a script for all columns for each page -->
+
+- every page must have page template blank
+
+
+- install snippet shortcodes (sc-user-email - [sv slug="sc-user-email"])
+- install wp coder plugin
+- wow plugins - wp coder
+- add new
+- insert title "Account"
+- paste html, css
+- repeat for change, home
+
+delete all existing pages, add three blank pages: home, account, change
+edit each - add [WP-Coder title="change"]
+
+alternative approaches
+- edit twentytwentythree theme (make a child theme), edit the css and add new template files for each page
+- make a custom shortcode
+- make a custom block
+- make a custom plugin
+
+
+media library - add new
+- money.jpg
+- media library - click file - copy File URL: from bottom right
+- at bottom of home.html replace the src attribute of the last img element with file url
+
+appearance - editor - Templates - Blank - Pen icon (edit)
+- click on the only block on the page (that says "This is the Post Content block, it will display all the blocks in any single post or page.")
+- on the right, disable, "Inner blocks use content width".
+- Save
+- Now all your pages should be full width
