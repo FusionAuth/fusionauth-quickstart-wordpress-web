@@ -12,6 +12,8 @@ volumes:
   db_data:
   fusionauth_config:
   search_data:
+  #wordpress:
+  #wpdb:
 
 services:
 
@@ -88,6 +90,7 @@ services:
 ## WORDPRESS ####################
   wpdb:
     image: richardjecooke/mysql_wordpress_fusionauth:3.6.1
+    #image: mysql:5.7
     restart: always
     networks:
       - wp
@@ -98,9 +101,12 @@ services:
       MYSQL_USER: u
       MYSQL_PASSWORD: u
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    #volumes:
+    #  - wpdb:/var/lib/mysql
 
   wordpress:
     image: richardjecooke/wordpress_fusionauth:3.6.1
+    #image: wordpress:6.3.1
     depends_on:
       - wpdb
       - fusionauth
@@ -114,3 +120,5 @@ services:
       WORDPRESS_DB_USER: u
       WORDPRESS_DB_PASSWORD: u
       WORDPRESS_DB_NAME: mysite
+    #volumes:
+    #  - wordpress:/var/www/html
