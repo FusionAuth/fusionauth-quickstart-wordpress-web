@@ -1,0 +1,131 @@
+.wowp-wrap {
+  fieldset {
+    border: 2px solid var(--wowp-border);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 24px;
+  }
+  legend {
+    font-weight: bold;
+    color: var(--wowp-dark);
+    padding: 0 8px;
+    font-size: 15px;
+  }
+
+}
+
+.wowp-field {
+  position: relative;
+  box-sizing: border-box;
+  & > input:not([type="checkbox"], [type="radio"]),
+  & > select {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border: 1px solid var(--wowp-blue);
+    max-width: 100%;
+  }
+  .label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 700;
+    //background-color: #ffffff;
+    padding: 0 5px;
+    color: #004A9B;
+    &:after {
+      position: absolute;
+      content: " ";
+      height: 3px;
+      background: #fff;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+      transform: translateY(-50%);
+    }
+  }
+
+}
+
+.wowp-field {
+  width: calc(100%/3 - 15px/2 - 2.5px);
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.wowp-field.has-chackbox {
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+  border: 1px solid var(--wowp-blue);
+  border-radius: 3px;
+  height: 40px;
+  line-height: 40px;
+  gap: 8px;
+  width: calc(100%/3 - 15px/2 - 2.5px - 2.5px);
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  input[type="checkbox"] {
+    margin: 0;
+  }
+  .label {
+    line-height: initial;
+  }
+}
+
+.wowp-field.has-addon {
+  display: flex;
+  align-items: center;
+  .is-addon {
+    box-sizing: inherit;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    background-color: #DFE2FC;
+    color: var(--wowp-dark);
+    border:  1px solid var(--wowp-blue);
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    margin-right: -2px;
+  }
+  input:not([type="checkbox"], [type="radio"]) {
+    border-radius: 0 3px 3px 0;
+  }
+
+}
+
+.wowp-field.has-addon .is-addon .dashicons {
+  line-height: 40px;
+}
+
+.wowp-field.border-default{
+  .is-addon {
+    background-color: #dcdcde;
+    color: #50575e;
+    border-color: #8c8f94;
+  }
+  input:not([type="checkbox"], [type="radio"]) {
+    border:  1px solid #8c8f94;
+  }
+
+}
+
+.wowp-field.is-full {
+  width: 100%;
+}
+
+.wowp-fields-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  //padding: 12px;
+  width: 100%;
+}
+

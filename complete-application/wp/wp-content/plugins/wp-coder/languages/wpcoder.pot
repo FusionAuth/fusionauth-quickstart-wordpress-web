@@ -1,0 +1,467 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Coder Pro\n"
+"POT-Creation-Date: 2023-08-07 11:38+0300\n"
+"PO-Revision-Date: 2023-08-02 13:57+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-coder.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: classes/Admin/AdminInitializer.php:26 includes/settings/2.css-code.php:26
+#: includes/settings/3.js-code.php:25
+msgid "Settings"
+msgstr ""
+
+#: classes/Admin/AdminInitializer.php:38
+#, php-format
+msgid ""
+"Thank you for using <b>%2$s</b>! Please <a href=\"%1$s\" "
+"target=\"_blank\">rate us</a>"
+msgstr ""
+
+#: classes/Admin/AdminNotices.php:24
+msgid "Item saved."
+msgstr ""
+
+#: classes/Admin/AdminNotices.php:29
+msgid "Item delete."
+msgstr ""
+
+#: classes/Dashboard/DashboardInitializer.php:37
+msgid "Add New"
+msgstr ""
+
+#: classes/Dashboard/DashboardInitializer.php:70
+msgid "Update"
+msgstr ""
+
+#: classes/Dashboard/Field.php:103
+msgid "Field must have name"
+msgstr ""
+
+#: classes/Dashboard/ImporterExporter.php:17
+msgid "Export All Data"
+msgstr ""
+
+#: classes/Dashboard/ImporterExporter.php:36
+msgid "Update item if item already exists.wpcoder"
+msgstr ""
+
+#: classes/Dashboard/ImporterExporter.php:42
+msgid "Import"
+msgstr ""
+
+#: classes/Dashboard/ImporterExporter.php:53
+msgid "Please upload a valid .json file"
+msgstr ""
+
+#: classes/Dashboard/ImporterExporter.php:53
+msgid "Error"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:46
+msgid "Untitled"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:49
+msgid "Edit"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:50
+msgid "Duplicate"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:51 includes/pages/sidebar.php:86
+msgid "Delete"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:52
+msgid "Export"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:83
+msgid "Title"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:84
+msgid "Shortcode"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:85
+msgid "Alternative Shortcode"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:86
+msgid "Tag"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:87 includes/pages/sidebar.php:42
+msgid "Test mode"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:87 classes/Dashboard/ListTable.php:88
+msgid "The item will only be displayed for administrators."
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:88 includes/pages/sidebar.php:36
+msgid "Status"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:124
+msgid "UnTitle"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:125
+msgid "Click for Deactivate."
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:126
+msgid "Click for Activate."
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:127 classes/Dashboard/ListTable.php:134
+msgid "OFF"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:128 classes/Dashboard/ListTable.php:135
+msgid "ON"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:131
+msgid "Click for OFF."
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:132
+msgid "Click for ON."
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:237
+msgid "Delate"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:238 includes/pages/sidebar.php:44
+msgid "Activate"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:239 includes/pages/sidebar.php:38
+msgid "Deactivate"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:240
+msgid "Test mode ON"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:241
+msgid "Test mode OFF"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:285
+msgid "Filter by tag"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:288
+msgid "All"
+msgstr ""
+
+#: classes/Dashboard/ListTable.php:301
+msgid "Filter"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:24
+msgid "Support Form"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:28
+msgid "Your Name"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:33
+msgid "Contact email"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:40
+msgid "Link to the issue"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:46
+msgid "Message type"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:48
+msgid "Issue"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:49
+msgid "Idea"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:54
+msgid "Plugin"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:60
+msgid "License Key"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:67
+msgid "Enter Your Message"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:76
+msgid "Send to Support"
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:133
+msgid "Your message has been sent to the support team."
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:136
+msgid "Sorry, but message did not send. Please, contact us "
+msgstr ""
+
+#: classes/Dashboard/SupportForm.php:151
+msgid "Please fill in all the form fields below."
+msgstr ""
+
+#: includes/class-wow-company.php:64
+msgid ""
+"Thank you for using <b>Our plugins</b>! Our website <a href=\"https://wow-"
+"estore.com/\" target=\"_blank\">Wow-Estore.com</a>"
+msgstr ""
+
+#: includes/pages/1.list.php:17
+msgid "Search"
+msgstr ""
+
+#: includes/pages/2.settings.php:26
+msgid "Enter title here"
+msgstr ""
+
+#: includes/pages/3.tools.php:17
+msgid "Export Settings"
+msgstr ""
+
+#: includes/pages/3.tools.php:20
+#, php-format
+msgid ""
+"Export the  settings for %s as a .json file. This allows you to easily "
+"import the configuration into another site."
+msgstr ""
+
+#: includes/pages/3.tools.php:27
+msgid "Import Settings"
+msgstr ""
+
+#: includes/pages/3.tools.php:30
+#, php-format
+msgid ""
+"Import the %s settings from a .json file. This file can be obtained by "
+"exporting the settings on another site using the form above."
+msgstr ""
+
+#: includes/pages/4.support.php:17
+#, php-format
+msgid ""
+"To get your support related question answered in the fastest timing, please "
+"send a message via the form below or write to us on email %1$s."
+msgstr ""
+
+#: includes/pages/4.support.php:21
+msgid ""
+"Also, you can send us your ideas and suggestions for improving the plugin."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:11
+msgid "WP Coder Page Template"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:12
+msgid ""
+"Whether you need a unique landing page, a distinct layout for a specific "
+"post, or a specialized page for an event, our WP Coder Page Template feature "
+"allows you to break free from the constraints of your theme's predefined "
+"templates. The page you create will be fully compatible with WordPress and "
+"seamlessly integrate with your existing site."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:15
+msgid "Custom Shortcodes"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:16
+msgid ""
+"You can insert the WP Coder shortcodes for: check users, uses the custom "
+"fields and other."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:19
+msgid "Display Rules"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:20
+msgid ""
+"Choose to display or hide the element on specific parts of your site, such "
+"as home page, blog page, archive pages, individual posts or pages, custom "
+"post types."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:23
+msgid "Devices Rules"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:24
+msgid ""
+"Adjust visibility based on the device the visitor is using, such as desktop "
+"or mobile."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:27
+msgid "Users Rules"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:28
+msgid ""
+"Control visibility based on the user's status. For example, you might show "
+"or hide elements depending on whether a user is logged in, what user role "
+"they have (like Subscriber, Contributor, Administrator), or even target "
+"specific users."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:31
+msgid "Browsers Rules"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:32
+msgid ""
+"This powerful feature allows you to tailor your content to the specific "
+"browser your visitor is using. With Browser Rules, you can create unique "
+"experiences for users depending on their browser type, such as Chrome, "
+"Firefox, Safari, or Edge."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:35
+msgid "Language Rule"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:36
+msgid ""
+"If your site is multilingual, you can decide which elements appear for each "
+"language."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:39
+msgid "Schedule"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:40
+msgid ""
+"Set the element to appear or disappear during certain timeframes. This can "
+"be useful for time-limited offers or seasonal events."
+msgstr ""
+
+#: includes/pages/6.pro-features.php:50
+msgid "what you get"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:51
+msgid "PRO Features"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:55
+msgid "Get More with Pro"
+msgstr ""
+
+#: includes/pages/6.pro-features.php:56
+msgid "Docs"
+msgstr ""
+
+#: includes/pages/sidebar.php:24
+msgid "Publish"
+msgstr ""
+
+#: includes/settings/1.html-code.php:13
+msgid "HTML Code"
+msgstr ""
+
+#: includes/settings/2.css-code.php:22
+msgid "CSS Code"
+msgstr ""
+
+#: includes/settings/2.css-code.php:29 includes/settings/3.js-code.php:34
+msgid "Inline"
+msgstr ""
+
+#: includes/settings/2.css-code.php:35 includes/settings/3.js-code.php:40
+msgid "Minified"
+msgstr ""
+
+#: includes/settings/2.css-code.php:52
+msgid "URL to the CSS file"
+msgstr ""
+
+#: includes/settings/3.js-code.php:21
+msgid "JavaScript Code"
+msgstr ""
+
+#: includes/settings/3.js-code.php:28
+msgid "JQuery Dependency"
+msgstr ""
+
+#: includes/settings/3.js-code.php:49 includes/settings/4.include.php:42
+#: includes/settings/4.include.php:78
+msgid "Attribute"
+msgstr ""
+
+#: includes/settings/3.js-code.php:69
+msgid "URL to the JS file"
+msgstr ""
+
+#: includes/settings/4.include.php:17
+msgid "Includes"
+msgstr ""
+
+#: includes/settings/4.include.php:31 includes/settings/4.include.php:66
+msgid "Type"
+msgstr ""
+
+#: includes/settings/4.include.php:36 includes/settings/4.include.php:73
+msgid "URL"
+msgstr ""
+
+#: wp-coder.php:122 wp-coder.php:133
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Coder"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wp-coder/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adding custom HTML, CSS, and JavaScript code to your WordPress site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Wow-Company"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wow-estore.com/"
+msgstr ""
