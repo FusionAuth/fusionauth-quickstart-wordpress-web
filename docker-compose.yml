@@ -97,8 +97,8 @@ services:
       - 3306:3306
     environment:
       MYSQL_DATABASE: mysite
-      MYSQL_USER: u
-      MYSQL_PASSWORD: u
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: password
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - wpdb:/var/lib/mysql
@@ -115,8 +115,8 @@ services:
       - 3000:80
     environment:
       WORDPRESS_DB_HOST: wpdb
-      WORDPRESS_DB_USER: u
-      WORDPRESS_DB_PASSWORD: u
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: mysite
     volumes:
       - wordpress:/var/www/html

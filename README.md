@@ -17,7 +17,7 @@ In a terminal run the following to start FusionAuth and WordPress.
 
 ```shell
 cd complete-application
-docker-compose up
+docker compose up
 ```
 
 Browse to [http://localhost:3000](http://localhost:3000) and login with `admin@example.com` and `password`.
