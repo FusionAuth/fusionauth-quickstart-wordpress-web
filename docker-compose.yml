@@ -119,4 +119,4 @@ services:
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: mysite
     volumes:
-      - wordpress:/var/www/html
+      - ./your-application:/var/www/html
