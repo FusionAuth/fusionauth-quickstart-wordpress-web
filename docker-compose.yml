@@ -12,7 +12,7 @@ volumes:
   db_data:
   fusionauth_config:
   search_data:
-  wordpress:
+  wp:
   wpdb:
 
 services:
@@ -31,7 +31,6 @@ services:
       retries: 5
     networks:
       - db_net
-    restart: unless-stopped
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -49,7 +48,6 @@ services:
       retries: 5
     networks:
       - search_net
-    restart: unless-stopped
     ulimits:
       memlock:
         soft: -1
@@ -80,7 +78,6 @@ services:
       - db_net
       - search_net
       - wp
-    restart: unless-stopped
     ports:
       - 9011:9011
     volumes:
@@ -90,7 +87,8 @@ services:
 ## WORDPRESS ####################
   wpdb:
     image: mysql:5.7
-    restart: always
+    platform: linux/amd64
+    container_name: wpdb
     networks:
       - wp
     ports:
@@ -105,10 +103,10 @@ services:
 
   wordpress:
     image: wordpress:6.3.1
+    platform: linux/amd64
     depends_on:
       - wpdb
       - fusionauth
-    restart: always
     networks:
       - wp
     ports:
@@ -119,4 +117,4 @@ services:
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: mysite
     volumes:
-      - ./your-application:/var/www/html
+      - wp:/var/www/html

@@ -32,7 +32,6 @@ services:
       retries: 5
     networks:
       - db_net
-    restart: unless-stopped
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -51,7 +50,6 @@ services:
       retries: 5
     networks:
       - search_net
-    restart: unless-stopped
     ulimits:
       memlock:
         soft: -1
@@ -83,7 +81,6 @@ services:
       - db_net
       - search_net
       - wp
-    restart: unless-stopped
     ports:
       - 9011:9011
     volumes:
@@ -94,7 +91,7 @@ services:
   wpdb:
     image: mysql:5.7
     container_name: wpdb
-    restart: always
+    platform: linux/amd64
     networks:
       - wp
     ports:
@@ -110,10 +107,10 @@ services:
   wordpress:
     image: wordpress:6.3.1
     container_name: wp
+    platform: linux/amd64
     depends_on:
       - wpdb
       - fusionauth
-    restart: always
     networks:
       - wp
     ports:
