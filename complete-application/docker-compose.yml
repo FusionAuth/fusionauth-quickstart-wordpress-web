@@ -96,7 +96,6 @@ services:
   wpdb:
     image: mysql:5.7
     platform: linux/amd64
-    container_name: wpdb
     networks:
       - wp
     ports:
