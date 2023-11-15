@@ -86,6 +86,7 @@ services:
     networks:
       - db_net
       - search_net
+      - wp
     restart: unless-stopped
     ports:
       - 9011:9011
