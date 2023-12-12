@@ -91,7 +91,8 @@
               "refresh_token"
             ],
             "debug": true,
-            "generateRefreshTokens": true
+            "generateRefreshTokens": true,
+            "requireRegistration": true
           },
           "jwtConfiguration": {
             "enabled": true,
