@@ -1,11 +1,14 @@
-# Quickstart: Wordpress app with FusionAuth
+# Quickstart: WordPress app with FusionAuth
 
-This repo holds an example Wordpress application that uses FusionAuth as the identity provider.
+> [!WARNING]
+> This repository is generated from content that lives at [github.com/FusionAuth/fusionauth-site](https://github.com/FusionAuth/fusionauth-site/tree/main/astro/localcode/quickstart-wordpress-web). Changes to files here _will be overwritten by that automation_. File an issue or pull request with [fusionauth-site](https://github.com/FusionAuth/fusionauth-site) instead.
 
-This repository is documented at https://fusionauth.io/docs/quickstarts/quickstart-wordpress-web.
+This repo holds an example WordPress application that uses FusionAuth as the identity provider.
+
+This repository is documented at https://fusionauth.io/docs/get-started/quickstarts/web/quickstart-wordpress-web.
 
 Further reading:
-- [FusionAuth OAuth Docs](https://fusionauth.io/docs/v1/tech/oauth/endpoints)
+- [FusionAuth OAuth Docs](https://fusionauth.io/docs/lifecycle/authenticate-users/oauth/endpoints)
 
 ## Project Contents
 
@@ -15,17 +18,17 @@ The `complete-application` directory contains a fully working version of the app
 
 ## Prerequisites
 
-- Docker 20 or higher for running FusionAuth, Wordpress and MySQL database
+- Docker 29 or higher for running FusionAuth, WordPress and MySQL database
 
 ## Running FusionAuth
 
-To run FusionAuth, just stand up the docker containers using docker-compose
+To run FusionAuth, start the Docker containers using Docker Compose:
 
-```shell
+```shell-session
 docker compose up
 ```
 
-This will start a Wordpress container, MySQL for Wordpress,  PostgreSQL, Opensearch and the FusionAuth server
+This will start a WordPress container, MySQL for WordPress, PostgreSQL, and the FusionAuth server.
 
 FusionAuth will initially be configured with these settings:
 
@@ -39,18 +42,13 @@ You can log into the [FusionAuth admin UI](http://localhost:9011/admin) and look
 
 ## Running the Example Application
 
-To run the application, first go into the project directory
+To run the application, first go into the project directory and configure all WordPress settings and plugins:
 
-```shell
+```shell-session
 cd complete-application
+./setup.sh
 ```
 
-Start up the application docker containers with the following
+Browse to [http://localhost:3000](http://localhost:3000) and log in with `richard@example.com` and `password`.
 
-```shell
-docker compose up
-```
-
-Browse to [http://localhost:3000](http://localhost:3000) and login with `richard@example.com` and `password`.
-
-Follow the tutorial at https://fusionauth.io/docs/quickstarts/quickstart-wordpress-web to learn how to configure WordPress to work with FusionAuth.
+Follow the tutorial at https://fusionauth.io/docs/get-started/quickstarts/web/quickstart-wordpress-web to learn how to configure WordPress to work with FusionAuth.
